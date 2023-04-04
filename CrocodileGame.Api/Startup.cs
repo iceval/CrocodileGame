@@ -75,6 +75,11 @@ namespace CrocodileGame
 
             app.UseAuthorization();
 
+            app.UseCors(options => options
+                .WithOrigins(new[] { "http://localhost:3000", "https://localhost:3000" })
+                .AllowAnyHeader()
+                .AllowAnyMethod());
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
