@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+
+.form {
+
+    &__box {
+        
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to top, #755A2D, #C19407);
+        border: 2mm ridge #B38130;
+        margin: 15% auto;
+        padding: 20px;
+        width: 80%;
+    }
+
+    &__back {
+        width: 28px;
+        height: 28px;
+        opacity: 0.5;
+        margin-left: left;
+        border: none;
+        background-color: #d3e232;
+    }
+
+    &__cell {
+        flex: 1 1;
+        min-width: 140px;
+        line-height: 2;
+        font-size: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 1px #000000;
+        background-color: #23a6a6;
+        border: none;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5), inset -2px -2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    &__title {
+        background-color: #174e72;
+    }
+
+    &__input {
+        &::placeholder { 
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+        &:-webkit-autofill{
+            -webkit-text-fill-color: #FFFFFF !important;
+            -webkit-box-shadow: 0 0 0 30px #23a6a6 inset !important;
+        }
+    }
+
+    &__button {
+        border: 0;
+        line-height: 2;
+        margin: 5px;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 1px #000000;
+        border-radius: 10px;
+        background-color: $item;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5), inset -2px -2px 3px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            filter: brightness(70%);
+        }
+        
+        &:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.5), inset 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

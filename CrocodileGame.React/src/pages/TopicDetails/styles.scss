@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.topic-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000000;
+    text-decoration: none;  
+
+    &__button {
+        text-decoration: none;
+    }
+}
+
