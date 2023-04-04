@@ -1,0 +1,46 @@
+.game {
+
+    &__button {
+        border: 0;
+        line-height: 2;
+        margin: 5px;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 1px #000000;
+        border-radius: 10px;
+        background-color: #17c86f;
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.5), inset -2px -2px 3px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+
+        
+        &:hover {
+            filter: brightness(70%);
+        }
+        
+        &:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.5), inset 2px 2px 3px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    &__card {
+    }
+
+    &__buttons {
+    }
+
+    &__button-hide {
+    }
+
+    &__button-subtract {
+    }
+
+    &__button-add {
+    }
+}
+.editor {
+
+    &__button {
+    }
+}
